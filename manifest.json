@@ -1,0 +1,20 @@
+{
+  "name": "EasyMute",
+  "description": "Get a list of all the noisy tabs in chrome and mute with just one click.",
+  "version": "1.1",
+  "manifest_version": 3,
+  "icons": {
+    "16": "/images/sound16.png",
+    "32": "/images/sound32.png",
+    "48": "/images/sound48.png",
+    "128": "/images/sound128.png"    
+  },
+  "permissions": [
+    "tabs"
+  ],
+  
+  "action": {
+    "default_title": "My Tabs",
+    "default_popup": "tab.html"
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <script src="jquery-3.6.0.min.js"></script>
+   </head>
+   <style>
+      div {
+         font-size: 20px;
+         margin: 5px;
+         box-sizing: border-box;
+         width: 300px;
+         height: 300px;
+         overflow:scroll;
+         
+      }
+      li {
+         font-size: 13px;
+         padding: 3px;
+         border-radius: 10px;
+         border: 1px solid #d0d0d0;
+
+      }    
+    
+      
+      body {
+         box-sizing: border-box;
+         min-width: 300px;
+         min-height: 300px;
+         
+
+         
+      }
+     
+      li.muted:after {
+         background-image: url('/images/muted3.png');
+         background-size: 20px 20px;
+         background-repeat: no-repeat;
+         display: block;
+         width: 20px; 
+         height: 20px;
+         content:""; 
+      }
+      li.unmuted:after {
+         background-image: url('/images/unmuted.png');
+         background-size: 20px 20px;
+         background-repeat: no-repeat;
+         display: block;
+         width: 20px; 
+         height: 20px;
+         content:"";
+         
+         
+      }
+      li:hover {
+         border: 2px solid #d0d0d0;
+
+      }
+      
+    
+   </style>
+   <body>
+      <h1 align="center">Click to mute/unmute: </h1>
+      <div class="l" id = "tabs"> </div>
+      <script src="tab.js"></script>
+   </body>
+
+</html>
